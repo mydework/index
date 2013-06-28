@@ -1,0 +1,302 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).bind("mobileinit", function() {
+$.mobile.page.prototype.options.addBackBtn = true;
+});
+</script>
+<script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<script src="/phonegap.js" type="text/javascript"></script>
+<style type="text/css"> .table-stroke thead th { border: 1px solid rgba(0, 0, 0, .2); }
+.table-stroke tbody th, .table-stroke tbody td { border: 1px solid rgba(0, 0, 0, .1); } </style>
+</head> 
+<body> 
+
+<div data-role="page" id="main">
+  <div data-role="header">
+    <h1> Xinyi's Planetary System<h1>
+    <a href="#Team" class="ui-btn-right" data-icon="star">Team</a>
+         </div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#Mercury"><img src="images/Mercury_Globe-wikipedia.png"/>Mercury</a></li>
+            <li><a href="#Venus"><img src="images/-venus-planetsforkids.png"/>Venus</a></li>
+			<li><a href="#Earth"><img src="images/earth-ericsson.png"/>Earth</a></li>
+            <li><a href="#Mars"><img src="images/mars-3-beyond-our-planet.png"/>Mars</a></li>
+            <li><a href="#Jupiter"><img src="images/jupiter01-starryskies.png"/>Jupiter</a></li>
+            <li><a href="#Saturn"><img src="images/saturn-planet-large-interlore.png"/>Saturn</a></li>
+            <li><a href="#Uranus"><img src="images/Uranus2-wikipedia.png"/>Uranus</a></li>
+            <li><a href="#Neptune"><img src="images/Neptune-wikipedia.png"/>Neptune</a></li>
+            <li><a href="#Team">Team</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Mercury">
+	<div data-role="header">
+		<h1>Mercury</h1>
+        <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Mercury" data-icon="star">Mercury</a></li>
+<li> <a href="#Venus" data-icon="check">Venus</a></li>
+<li> <a href="#Earth" data-icon="grid">Earth</a></li>
+<li> <a href="#Mars" data-icon="gear" >Mars</a></li>
+</ul>
+</div>
+	</div>
+	<div data-role="content">	
+		<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Mercury</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>57 910 000km from the Sun(planet nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>3.30e23kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>4880km(8th largest)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>5.43g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>74 797 000km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>58days 15hours 30minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>3.7m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>None</th> </tr> </tbody>
+</table>
+
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Venus">
+	<div data-role="header">
+		<h1>Venus</h1>
+        <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Mercury" data-icon="star">Mercury</a></li>
+<li> <a href="#Venus" data-icon="check">Venus</a></li>
+<li> <a href="#Earth" data-icon="grid">Earth</a></li>
+<li> <a href="#Mars" data-icon="gear" >Mars</a></li>
+</ul>
+</div>
+
+	</div>
+	<div data-role="content">	
+		<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Venus</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>108 200 000km(second nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>4.869e24kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>12 103.6km(6th largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th >Density</th> <th>5.20g/cm3</th></tr></tbody>
+<tbody> <tr> <th>Surface Area</th> <th>460 234 317km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>116days 18hours 0minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>8.87m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>None</th> </tr> </tbody>body>
+
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Earth">
+	<div data-role="header">
+		<h1>Earth</h1>
+        <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Mercury" data-icon="star">Mercury</a></li>
+<li> <a href="#Venus" data-icon="check">Venus</a></li>
+<li> <a href="#Earth" data-icon="grid">Earth</a></li>
+<li> <a href="#Mars" data-icon="gear" >Mars</a></li>
+</ul>
+</div>
+
+	</div>
+	<div data-role="content">	
+					<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Earth</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>149 600 000(third nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>5.972e24kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>12 756.3km(5th largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>5.52g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>510 000 000km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>1day on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>9.78m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>1</th> </tr> </tbody>
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Mars">
+	<div data-role="header">
+		<h1>Mars</h1>
+       <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Mercury" data-icon="star">Mercury</a></li>
+<li> <a href="#Venus" data-icon="check">Venus</a></li>
+<li> <a href="#Earth" data-icon="grid">Earth</a></li>
+<li> <a href="#Mars" data-icon="gear" >Mars</a></li>
+</ul>
+</div>
+	</div>
+	<div data-role="content">	
+					<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Mars</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>227 940 000km(fourth nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>6.4219e23kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>6794km(7th largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>3.93g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>144 798 500km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>1days 0hours 40minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>3.711m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>Two</th> </tr> </tbody>
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>    
+    
+   <div data-role="page" id="Jupiter">
+	<div data-role="header">
+		<h1>Jupiter</h1>
+        <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Jupiter" data-icon="star">Jupiter</a></li>
+<li> <a href="#Saturn" data-icon="check">Saturn</a></li>
+<li> <a href="#Uranus" data-icon="grid">Uranus</a></li>
+<li> <a href="#Neptune" data-icon="gear" >Neptune</a></li>
+</ul>
+</div>
+	</div>    
+	<div data-role="content">	
+					<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Juiter</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>778 330 000(fifth nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>1.900e27kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>142 984km(largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>1.33g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>61 418 738 571km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>0days 9hours 56minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>24.79m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>63</th> </tr> </tbody>
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>    
+
+<div data-role="page" id="Saturn">
+	<div data-role="header">
+		<h1>Saturn</h1>
+       <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Jupiter" data-icon="star">Jupiter</a></li>
+<li> <a href="#Saturn" data-icon="check">Saturn</a></li>
+<li> <a href="#Uranus" data-icon="grid">Uranus</a></li>
+<li> <a href="#Neptune" data-icon="gear" >Neptune</a></li>
+</ul>
+</div>
+	</div>    
+	<div data-role="content">	
+					<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Saturn</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>1 429 400 000km(sixth nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>5.68e26kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>120 536km(2nd largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>6870g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>42 700 000 000km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>0days 10hours 39minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>10.44m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>31</th> </tr> </tbody>
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div> 
+
+ <div data-role="page" id="Uranus">
+	<div data-role="header">
+		<h1>Uranus</h1>
+         <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Jupiter" data-icon="star">Jupiter</a></li>
+<li> <a href="#Saturn" data-icon="check">Saturn</a></li>
+<li> <a href="#Uranus" data-icon="grid">Uranus</a></li>
+<li> <a href="#Neptune" data-icon="gear" >Neptune</a></li>
+</ul>
+</div>
+	</div>    
+	<div data-role="content">	
+					<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Uranus</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>2 870 990 000km(seventh nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>8.683e25kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>51 118(3rd largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>1.27g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>8 083 079 690km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>0days 17hours 14minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>8.69m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>27</th> </tr> </tbody>
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+</div>    
+  
+<div data-role="page" id="Neptune">
+	<div data-role="header">
+		<h1>Neptune</h1>
+         <a href="#main" class="ui-btn-right" data-icon="home">home</a>
+        <div data-role="navbar">
+        <ul>
+<li> <a href="#Jupiter" data-icon="star">Jupiter</a></li>
+<li> <a href="#Saturn" data-icon="check">Saturn</a></li>
+<li> <a href="#Uranus" data-icon="grid">Uranus</a></li>
+<li> <a href="#Neptune" data-icon="gear" >Neptune</a></li>
+</ul>
+</div>
+	</div>    
+	<div data-role="content">	
+					<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Questions</th> <th>Facts about Neptune</th> </tr> </thead>
+<tbody> <tr> <th>Distance from Sun</th> <th>2 870 990 000km(seventh nearest to the Sun)</th> </tr> </tbody>
+<tbody> <tr> <th>Mass</th> <th>8.683e25kg</th> </tr> </tbody>
+<tbody> <tr> <th>Diameter</th> <th>51 118(4th largest planet)</th> </tr> </tbody>
+<tbody> <tr> <th>Density</th> <th>1.64g/cm3</th> </tr> </tbody>
+<tbody> <tr> <th>Surface Area</th> <th>7 618 272 763km2</th> </tr> </tbody>
+<tbody> <tr> <th>Length of Day</th> <th>0days 16hours 6minutes on Earth</th> </tr> </tbody>
+<tbody> <tr> <th>Gravity</th> <th>11.15m/s2</th> </tr> </tbody>
+<tbody> <tr> <th>Moons</th> <th>13</th> </tr> </tbody>
+</table>
+	</div>
+	<div data-role="footer">
+		<h4>DHS 1H</h4>
+	</div>
+    
+   <div data-role="page" id="Team">
+	<div data-role="header">
+		<h1>Team</h1>
+	</div>
+	<div data-role="content">	
+		<table data-role="table" id="my-table" data-mode="reflow" class="table-stroke"> <thead> <tr> <th>Team members</th>	<th>Roles</th> </tr> </thead>
+        <tbody> <tr> <th> Oh Xin Yi <img src="images/oh xin yi 1H 10.png"/></th> <th>everything</th></tr> </tbody>
+        </table>
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+   
+</div>    
+</body>
+</html>
